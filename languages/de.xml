@@ -405,4 +405,6 @@
   <string name="SYS_COPY_VAR">#VAR1# kopieren</string>
   <string name="SYS_COUNT_INDIVIDUAL_RECIPIENT" description="Singular">#VAR1# individueller Empfänger</string>
   <string name="SYS_COUNT_INDIVIDUAL_RECIPIENTS" description="Plural">#VAR1# individuelle Empfänger</string>
+  <string name="SYS_PROFILE_QRCODE">Kontatdaten QR-Code</string>
+  <string name="SYS_PROFILE_QRCODE_DESC">Scanne diesen QR-Code, um die Visitenkarte zu dieser Person zu speichern.</string>
 </resources>
