@@ -213,6 +213,15 @@ try {
         'bi-download'
     );
 
+    // NEW: Add QR code to template
+    try {
+        $vCardData = $user->getVCard();
+        $qrCodeService = new \Admidio\Users\Service\QrCodeService();
+        $qrCodeBase64 = $qrCodeService->generateVCardQrCode($vCardData);
+        $page->assignSmartyVariable('profileQrCode', $qrCodeBase64);
+    } catch (\Exception $e) {
+        $gMessage->show($e->getMessage());
+    }
 
     // *******************************************************************************
     // User data block
