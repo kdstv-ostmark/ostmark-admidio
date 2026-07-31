@@ -87,6 +87,13 @@
         {/foreach}
     </div>
     <div class="col-sm-4 text-end">
+        {if !empty($profileQrCode)}
+            <div class="profile-qrcode mb-3">
+                <h5>{$l10n->get('SYS_PROFILE_QRCODE')}</h5>
+                <img src="{$profileQrCode}" alt="vCard QR-Code" style="width: 200px; height: 200px;" />
+                <p class="small text-muted">{$l10n->get('SYS_PROFILE_QRCODE_DESC')}</p>
+            </div>
+        {/if}
         <img id="adm_profile_photo" class="rounded" src="{$urlProfilePhoto}" alt="{$l10n->get('SYS_CURRENT_PROFILE_PICTURE')}" />
         {if isset($urlProfilePhotoUpload)}
             <ul class="list-unstyled">
